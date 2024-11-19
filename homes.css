@@ -1,0 +1,196 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+}
+
+/* Navbar */
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #c9f1dd;
+    background-size:cover;
+    color: #000000;
+}
+
+.header img {
+    height: 50px;
+}
+
+#a{
+    font-size:4rem;
+    color: rgb(80, 249, 147);
+   }
+#logo{
+    font-size: 3rem;
+    color: rgb(67, 229, 137);
+    text-shadow: 4px 3px 6px #170909;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+.left{
+    display: flex;
+}
+#plus{
+    height: 70px;
+    width: 70px;
+}
+.right {
+    display: flex;
+    list-style: none;
+    padding-top: 30px;
+}
+
+.right li {
+    margin: 0 1rem;
+}
+
+.right a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+#h{
+    color: #000000;
+    font-size: xx-large;
+}
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.search-bar input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 40%;
+}
+
+.search-bar button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #c9f1dd;
+    color: #000000;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.search-bar button:hover{
+    color: #2f3bbfbe;
+    background-color: #a9efcc;
+    transition: 3sec ease-in-out;
+}
+
+/* Services Section */
+#services {
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+  }
+  
+  .service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .service-item {
+    flex-basis: 30%;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .service-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+
+/* Testimonials Section */
+#testimonials {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.testimonial {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    font-style: italic;
+}
+
+/* Newsletter Signup */
+#newsletter {
+    padding: 2rem;
+    background-color: #c9f1dd;
+    color: #ffffff;
+    text-align: center;
+}
+#newsletter p{
+    color: #958f8f;
+}
+#newsletter form {
+    margin-top: 1rem;
+}
+
+#newsletter input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    width:40%;
+}
+
+#newsletter button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fff;
+    color: #3d3e40;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Contact Section */
+#contact {
+    padding: 2rem;
+    background-color:#c9f1dd;
+    text-align: center;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Footer */
+footer {
+    padding: 1rem;
+    background-color: #ade7ca;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+        align-items: center;
+    }
+}

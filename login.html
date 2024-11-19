@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Sign Up / Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to ārogyaśālā</h1>
+            <p>Please log in or sign up to access your account.</p>
+        </header>
+        <div class="form-container">
+            <div class="form-tabs">
+                <button id="loginTab" onclick="showLogin()">Login</button>
+                <button id="signupTab" onclick="showSignUp()">Sign Up</button>
+            </div>
+            <div id="loginForm" class="form">
+                <h2>Login</h2>
+                <form onsubmit="return validateLoginForm()">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" required>
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" required>
+                    <button type="submit">Log In</button>
+                    <p><a href="#">Forgot your password?</a></p>
+                </form>
+            </div>
+            <div id="signupForm" class="form hidden">
+                <h2>Sign Up</h2>
+                <form onsubmit="return validateSignUpForm()">
+                    <label for="signupName">Full Name</label>
+                    <input type="text" id="signupName" required>
+                    <label for="signupEmail">Email Address</label>
+                    <input type="email" id="signupEmail" required>
+                    <label for="signupPassword">Password</label>
+                    <input type="password" id="signupPassword" required>
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" required>
+                    <label><input type="checkbox" required> I agree to the <a href="#">terms and conditions</a></label>
+                    <button type="submit">Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
